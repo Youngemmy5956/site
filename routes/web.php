@@ -5,6 +5,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostsController;
 use GuzzleHttp\Psr7\Request;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -110,3 +112,4 @@ Route::prefix('/fun')->name('fun.')->group(function() use ($posts) {
 
 
 
+Auth::routes();
